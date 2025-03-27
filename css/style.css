@@ -57,10 +57,6 @@ section {
     background-color: var(--primary);
     min-height: 100vh; /* Ocupar pelo menos 100vh, mas crescer se necessário */
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: column nowrap;
 }
 
 img {
@@ -70,6 +66,13 @@ img {
 
 .initial-section {
     padding-top: 80px; /* Ajuste para compensar a altura do header */
+}
+
+.initial-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
 }
 
 .initial-section h1 {
