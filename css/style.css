@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
     font-family: 'Inter', sans-serif;
 }
 
-:root{
+:root {
     --primary: #007acc;
     --second: #1e1e1e;
     --main-color: #f5f5f5;
@@ -17,7 +17,7 @@
     --alternative-fund: #282c34;
 }
 
-header{
+header {
     background-color: var(--alternative-fund);
     position: fixed;
     width: 100%;
@@ -27,16 +27,16 @@ header{
     align-items: center;
 }
 
-nav{
+nav {
     display: none;
 }
 
-#logo{
+#logo {
     font-size: 35px;
     color: var(--main-color);
 }
 
-.btn{
+.btn {
     background-color: var(--primary);
     color: var(--main-color);
     border-radius: 8px;
@@ -46,47 +46,84 @@ nav{
     margin-right: 5px;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: var(--main-color);
     border: solid 1px var(--primary);
     color: var(--primary);
     transition: 0.4s ease;
 }
 
-section{
+section {
     background-color: var(--primary);
     height: 100vh;
     width: 100%;
 }
 
-img{
+img {
     width: 100%;
-    height: 250px;
+    height: 330px;
 }
 
-.initial-section{
-    padding-top: 68px;
+.initial-section {
+    padding-top: 70px;
 }
 
-.initial-section h1{
+.initial-section h1 {
     color: var(--main-color);
     text-align: center;
 }
 
-.initial-section p{
+.initial-section p {
     color: var(--main-color);
     padding: 15px;
     text-align: justify;
 }
 
-#btnTutoriais{
+#btnTutoriais {
     background-color: var(--main-color);
     color: var(--primary);
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
-#btnTutoriais:hover{
+#btnTutoriais:hover {
     background-color: var(--alternative-fund);
     color: white;
+}
+
+.second-section h2 {
+    text-align: center;
+    color: var(--main-color);
+}
+
+.card-container {
+    padding: 10px;
+}
+
+.card {
+    max-width: 355px;
+    background-color: var(--alternative-fund);
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4),
+        0 2px 6px rgba(255, 255, 255, 0.08);
+    margin: 10px 0px;
+}
+
+#logoLamp,
+#logoCode,
+#logoUpdate {
+    color: var(--details-links);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.card p{
+    color: var(--main-color);
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
 }
