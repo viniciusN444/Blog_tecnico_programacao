@@ -61,7 +61,7 @@ section {
 
 img {
     width: 100%;
-    height: 330px;
+    height: 295px;
 }
 
 .initial-section {
@@ -145,12 +145,19 @@ img {
     margin-top: 30px;
 }
 
-#stylized-button p{
-    font-size: 15px;
+#stylized-button p,
+#variables p,
+#flexbox-introduction p
+{
+    width: 336px;
+    text-align: center;
+    font-size: 14px;
     font-weight: bold;
 }
 
-#btnArtigoButton{
+#btnArtigoButton,
+#btnArtigoVariables,
+#btnArtigoFlexbox{
     display: block;
     margin: 0px auto 10px auto;
     width: 102px;
