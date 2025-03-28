@@ -25,6 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 nav {
@@ -172,8 +173,10 @@ img {
     color: var(--main-color);
     position: relative;
     max-width: 355px;
-    margin: 0 auto;
+    margin: auto ; /* Certifique-se de manter o margin adequado */
 }
+
+
 
 .timeline h3{
     color: var(--primary);
@@ -185,7 +188,7 @@ img {
     position: absolute;
     width: 4px;
     background-color: var(--main-color);
-    top: 0;
+    top: 40px;
     bottom: 0;
     left: 20px;
 }
@@ -209,4 +212,67 @@ img {
     border-radius: 50%;
     top: 20px;
     left: 10px;
+}
+
+.faq-container {
+    background: var(--alternative-fund);
+    max-width: 355px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--main-color);
+    text-align: center;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    color: var(--main-color);
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.faq-question::after {
+    content: "▼";
+    font-size: 14px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 15px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question::after {
+    content: "▲";
+}
+
+ul{
+    padding: 10px;
+}
+
+li{
+    margin-bottom: 5px;
 }
