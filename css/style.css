@@ -84,6 +84,7 @@ img {
     color: var(--main-color);
     padding: 15px;
     text-align: justify;
+    font-size: 17.5px;
 }
 
 #btnTutoriais {
@@ -98,7 +99,8 @@ img {
     color: white;
 }
 
-.second-section h2 {
+.second-section h2,
+.third-section h2 {
     text-align: center;
     color: var(--main-color);
 }
@@ -136,4 +138,20 @@ img {
     margin-bottom: 10px;
     font-size: 17px;
     letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.third-section h2{
+    margin-top: 30px;
+}
+
+#stylized-button p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#btnArtigoButton{
+    display: block;
+    margin: 0px auto 10px auto;
+    width: 102px;
 }
