@@ -149,7 +149,7 @@ img {
 #variables p,
 #flexbox-introduction p
 {
-    width: 336px;
+    width: 355px;
     text-align: center;
     font-size: 14px;
     font-weight: bold;
@@ -161,4 +161,52 @@ img {
     display: block;
     margin: 0px auto 10px auto;
     width: 102px;
+}
+
+.title h2{
+    color: var(--main-color);
+    text-align: center;
+}
+
+.timeline {
+    color: var(--main-color);
+    position: relative;
+    max-width: 355px;
+    margin: 0 auto;
+}
+
+.timeline h3{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: var(--main-color);
+    top: 0;
+    bottom: 0;
+    left: 20px;
+}
+
+.event {
+    position: relative;
+    background-color: var(--alternative-fund);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+}
+
+.event::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    top: 20px;
+    left: 10px;
 }
